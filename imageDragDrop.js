@@ -20,6 +20,7 @@ function loadFile(event) {
     image.style.opacity = '0'
     loader.style.transform = 'translateY(-60%)'
     image.style.transform = 'scale(1.4)'
+    imageLabel.style.transform = "translateY(25%) scale(1.2)"
     setTimeout(() => {
         image.style.opacity = '1'
         image.style.transform = 'scale(1)'
@@ -40,6 +41,7 @@ function clearImage() {
     image.style.opacity = '0'
     image.style.transform = 'scale(1.4)'
     imageTools.style.zIndex = '0'
+    imageLabel.style.transform = "translateY(-25%) scale(1)"
     setTimeout(() => {
         image.src = '';
     }, 200)
